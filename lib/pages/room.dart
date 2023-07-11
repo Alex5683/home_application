@@ -97,17 +97,16 @@ class _DevicesState extends State<Devices> {
                       ),
                     ],
                   ),
-                  Text(
-                    "on",
-                    style: TextStyle(fontSize: 20, color: Colors.grey.shade800),
+                  Image.asset(
+                    'assets/images/on.png', // Replace 'image_name.png' with the actual image file path
+                    width: 60,
+                    height: 40,
                   ),
 
                   SizedBox(width: 10), // Add some spacing between the text and the image
                 ],
               ),
             ),
-
-            const SizedBox(height: 20),
 
             const SizedBox(height: 25),
 

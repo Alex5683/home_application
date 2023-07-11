@@ -89,17 +89,20 @@ class _TemperaturePageState extends State<TemperaturePage> {
                         ),
                       ),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Container(
-                        color: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 35),
-                        child: const Text(
-                          'Statistics',
-                          style: TextStyle(color: Colors.black, fontSize: 13.0),
+
+                       OutlinedButton(
+                         onPressed: () {  },
+                         child: Container(
+                           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                        child: Text(
+                          "Statistics",
+                          style: TextStyle(
+                            color: Colors.black,
+                          ),
                         ),
+
                       ),
-                    ),
+                    )
                   ],
                 ),
               ),

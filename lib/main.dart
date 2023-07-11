@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: Theme.of(context).copyWith(
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.deepPurple,
+          primarySwatch: Colors.blueGrey,
         ),
       ),
       home: Scaffold(
@@ -45,14 +45,14 @@ class _MyAppState extends State<MyApp> {
           },
           tabs: [
             MoltenTab(
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.sunny),
             ),
             MoltenTab(
               icon: Icon(Icons.home),
               title: Text('home'),
             ),
             MoltenTab(
-              icon: Icon(Icons.person),
+              icon: Icon(Icons.device_hub),
             ),
           ],
         ),
