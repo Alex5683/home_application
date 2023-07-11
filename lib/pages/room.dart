@@ -53,14 +53,16 @@ class _DevicesState extends State<Devices> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // menu icon
-                  Image.asset(
-                    'lib/icons/menu.png',
-                    height: 45,
-                    color: Colors.grey[800],
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pop(_DevicesState as BuildContext);
+                    },
+                    child: const Icon(
+                      Icons.arrow_back_ios,
+                      color: Colors.black,
+                    ),
                   ),
-
-                  // account icon
+              // Space added
                   SizedBox(width: 10), // Space added
                   RotatedBox(
                     quarterTurns: 135,
@@ -137,7 +139,7 @@ class _DevicesState extends State<Devices> {
             Expanded(
               child: ListView.builder(
                 itemCount: 4,
-                padding: const EdgeInsets.symmetric(horizontal: 0),
+
                 itemBuilder: (context, index) {
                   return SmartDeviceBox2(
                     smartDeviceName: mySmartDevices[index][0],

@@ -74,12 +74,32 @@ class _TemperaturePageState extends State<TemperaturePage> {
               ),
 
               Padding(
-                padding: EdgeInsets.only(top: 80),
+                padding: EdgeInsets.only(top: 50),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    _roundedButton(title: 'Temperature', isActive: true),
-                    _roundedButton(title: 'Statistics'),
+                    TextButton(
+                      onPressed: () {},
+                      child: Container(
+                        color: Colors.black,
+                        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 35),
+                        child: const Text(
+                          'Temperature',
+                          style: TextStyle(color: Colors.white, fontSize: 13.0),
+                        ),
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: Container(
+                        color: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 35),
+                        child: const Text(
+                          'Statistics',
+                          style: TextStyle(color: Colors.black, fontSize: 13.0),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),

@@ -51,15 +51,16 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // menu icon
-                  Image.asset(
-                    'lib/icons/menu.png',
-                    height: 45,
-                    color: Colors.grey[800],
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pop(HomePage as BuildContext);
+                    },
+                    child: const Icon(
+                      Icons.arrow_back_ios,
+                      color: Colors.black,
+                    ),
                   ),
 
-                  //
-                  // account icon
                   SizedBox(width: 10), // Space added
                   RotatedBox(
                     quarterTurns: 135,
