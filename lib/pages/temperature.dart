@@ -82,25 +82,44 @@ class _TemperaturePageState extends State<TemperaturePage> {
                       onPressed: () {},
                       child: Container(
                         color: Colors.black,
-                        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 35),
-                        child: const Text(
-                          'Temperature',
-                          style: TextStyle(color: Colors.white, fontSize: 13.0),
+                        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.sunny_snowing,
+                              color: Colors.white,
+                              size: 20,
+                            ),
+                            const SizedBox(width: 8),
+                            const Text(
+                              'Temperature',
+                              style: TextStyle(color: Colors.white, fontSize: 13.0),
+                            ),
+                          ],
                         ),
                       ),
                     ),
 
-                       OutlinedButton(
-                         onPressed: () {  },
-                         child: Container(
-                           padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-                        child: Text(
-                          "Statistics",
-                          style: TextStyle(
-                            color: Colors.black,
-                          ),
+                    OutlinedButton(
+                      onPressed: () {},
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.bar_chart,
+                              color: Colors.black,
+                              size: 20,
+                            ),
+                            SizedBox(width: 8),
+                            Text(
+                              "Statistics",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
-
                       ),
                     )
                   ],
