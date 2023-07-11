@@ -86,12 +86,12 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Welcome Home,",
+                    "Welcome Home",
                     style: TextStyle(fontSize: 20, color: Colors.grey.shade800),
                   ),
                   Text(
                     'garret reynolds',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 22),
                   ),
                 ],
               ),

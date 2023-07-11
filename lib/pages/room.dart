@@ -89,7 +89,7 @@ class _DevicesState extends State<Devices> {
                     children: [
                       Text(
                         "Devices",
-                        style: TextStyle(fontSize: 20, color: Colors.grey.shade800),
+                        style: TextStyle(fontSize: 40, color: Colors.grey.shade800),
                       ),
                       Text(
                         'Connected',

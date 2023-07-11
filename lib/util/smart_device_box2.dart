@@ -23,6 +23,7 @@ class SmartDeviceBox2 extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(2.0),
       child: Container(
+        height: 100,
         decoration: BoxDecoration(
 
           color: powerOn ? Colors.grey[900] : Color.fromARGB(44, 164, 167, 189),
