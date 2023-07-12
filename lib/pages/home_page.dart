@@ -91,7 +91,8 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Text(
                     'garret reynolds',
-                    style: TextStyle(fontSize: 22),
+                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+
                   ),
                 ],
               ),
